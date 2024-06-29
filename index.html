@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="home-container" id="home">
+        <div class="part1">
+            <h2>Hi, Myself </h2><br>
+            <h1 class="name-move">Vinay Sharma</h1><br>
+            <h3>And I'm a <span style="color: #6495ED ;">Frontend Developer</span></h3><br>
+            <h4>Jaipur, India</h4><br>
+            <p>
+                <a href="https://www.facebook.com/viru.sharma.148553"><i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;
+                <a href="https://github.com/vinay637851"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp; 
+                <a href="https://www.instagram.com/sharmavinay6378/"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp; 
+                <a href="https://www.linkedin.com/in/vinay-sharma-538360285/"><i class="fa-brands fa-linkedin"></i></a></p><br>
+            <a href="Resume.pdf"><button>My Resume</button></a>
+        </div>
+        <div class="part2">
+            <img src="profile.png" alt="">
+        </div>
+    </div>
+    <div class="education-container" id="education" >
+        <div class="part1">
+            <img src="CITM_logo.png" alt="">
+            <div>
+                <h2>BCA</h2>
+                <h3>Bachelor of Computer Application</h3>
+                <h4>Computer Science & Engineering</h4>
+                <h5>2020-2023</h5>
+                <h6>CIITM, Jaipur</h6>
+                <h6>CGPA : 8.7</h6>
+                <a href="https://www.ciitm.org/"><button>Learn more</button></a>
+            </div>
+        </div>
+        <div class="part2">
+            <img src="Manit.png" alt="">
+            <div>
+                <h2>MCA</h2>
+                <h3>Master of Computer Application</h3>
+                <h4>Computer Science & Engineering</h4>
+                <h5>2023-2026</h5>
+                <h6>MANIT, Bhopal</h6>
+                <h6>CGPA : 8.47</h6>
+                <a href="https://www.manit.ac.in/"><button>Learn more</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="skill-container" id="skill">
+        <div class="skill-nav">
+            <ul>
+                <li onclick="move(this)">Languages</li>
+                <li onclick="move(this)">Speak</li>
+                <li onclick="move(this)">Hobbies</li>
+            </ul>
+        </div>
+        <div class="skill-contant">
+            <div class="language-skill">
+                <ul>
+                    <li><i class="fa-solid fa-code" style="color: #78281F"></i>HTML </li>
+                    <li><i class="fa-brands fa-css3-alt" style="color: #186A3B;"></i>CSS</li>
+                    <li><i class="fa-brands fa-js " style="color: #7D6608"></i>JavaScript</li>
+                    <li><i class="fa-brands fa-python" style="color: #3498DB"></i>Python</li>
+                    <li><i class="fa-solid fa-c" style="color: #1B4F72 "></i>C</li>
+                    <li><i class="fa-brands fa-node " style="color: #186A3B;"></i>Node.js</li>
+                    <li><i class="fa-brands fa-java" style="color: #74C0FC;"></i>Java</li>
+                </ul>
+            </div>
+            <div class="speak-skill">
+                <ul>
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>Rajasthani</li>
+                </ul>
+            </div>
+            <div class="hobbies-skill">
+                <ul>
+                    <li>Cricket</li>
+                    <li>Carrom</li>
+                    <li>Chess</li>
+                    <li>Badminton</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container" id="contact">
+        <form action="">
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="Full Name"  required></td>
+                    <td id="adjust"><input type="text" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td><input type="tel" placeholder="Mobile Number" required></td>
+                    <td id="adjust"><input type="text" placeholder="Address" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name=""  id="" placeholder="Write Message" required></textarea></td>
+                </tr>
+                </table>
+            <button>Send Message</button>
+        </form>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
