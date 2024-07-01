@@ -14,17 +14,18 @@
 
     <div class="nav">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li onclick="list(this)"><a href="#home">Home</a></li>
+            <li onclick="list(this)"><a href="#education">Education</a></li>
+            <li onclick="list(this)"><a href="#skill">Skill</a></li>
+            <li onclick="list(this)"><a href="#">Projects</a></li>
+            <li onclick="list(this)"><a href="#contact">Contact</a></li>
         </ul>
+        <i class="fa-solid fa-bars" onclick="list_on()"></i>
     </div>
     <div class="home-container" id="home">
         <div class="part1">
             <h2>Hi, Myself </h2><br>
-            <h1 class="name-move">Vinay Sharma</h1><br>
+            <h2 class="name-move">Vinay Sharma</h2><br>
             <h3>And I'm a <span style="color: #6495ED ;">Frontend Developer</span></h3><br>
             <h4>Jaipur, India</h4><br>
             <p>
@@ -32,7 +33,7 @@
                 <a href="https://github.com/vinay637851"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp; 
                 <a href="https://www.instagram.com/sharmavinay6378/"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp; 
                 <a href="https://www.linkedin.com/in/vinay-sharma-538360285/"><i class="fa-brands fa-linkedin"></i></a></p><br>
-            <a href="Resume.pdf"><button>My Resume</button></a>
+            <a href="Resume.pdf"><button>Resume</button></a>
         </div>
         <div class="part2">
             <img src="profile.png" alt="">
@@ -48,7 +49,7 @@
                 <h5>2020-2023</h5>
                 <h6>CIITM, Jaipur</h6>
                 <h6>CGPA : 8.7</h6>
-                <a href="https://www.ciitm.org/"><button>Learn more</button></a>
+                <a href="https://www.ciitm.org/"><button>More</button></a>
             </div>
         </div>
         <div class="part2">
@@ -60,7 +61,7 @@
                 <h5>2023-2026</h5>
                 <h6>MANIT, Bhopal</h6>
                 <h6>CGPA : 8.47</h6>
-                <a href="https://www.manit.ac.in/"><button>Learn more</button></a>
+                <a href="https://www.manit.ac.in/"><button>More</button></a>
             </div>
         </div>
     </div>

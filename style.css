@@ -18,6 +18,9 @@
     z-index: 1;
     top: 0;
 }
+.nav i{
+    display: none;
+}
 .nav ul,.nav li{
     display: flex;
     list-style: none;
@@ -30,16 +33,14 @@
 .nav a{
     height: 6vh;
     width: 7vw;
-    display: flex;
-    align-items: center ;
-    justify-content: center;
+    text-align: center;
     color:white;
     text-decoration: none;
 }
 .nav a:hover::before{
     content: "";
     position: absolute;
-    width: inherit;
+    width: 0vw;
     height: inherit;
     animation-fill-mode: forwards;
     animation: nav_effect 0.5s linear alternate;
@@ -50,7 +51,7 @@
         width: 0vw;
     }
     100%{
-        width: 7vw;
+        width: 25vw;
     }    
 }
 .home-container{
@@ -97,9 +98,9 @@ button:hover{
 .fa-brands,.fa-solid{
     font-size: 25px;
 }
-.fa-brands:hover,.fa-solid:hover,.skill-contant li:hover .fa-solid ,.skill-contant li:hover .fa-brands{
+/* .fa-brands:hover,.fa-solid:hover,.skill-contant li:hover .fa-solid ,.skill-contant li:hover .fa-brands{
     filter: drop-shadow(0 0 10px #16A085);
-}
+} */
 .education-container{
     height: 100vh;
     width: 100%;
@@ -281,5 +282,58 @@ textarea{
     }
     100%{
         width: 12ch;
+    }
+}
+
+@media screen and (max-width:300px) and (min-width:250px){
+    .home-container .part2{
+        display: none;
+    }
+    .home-container{
+        padding: 0px 10vw 0px 10vw;
+    }
+    .home-container p{
+        display: flex;
+        gap:2vh;
+    }
+    button{
+        width: 5.5rem;
+        font-size: 18px;
+    }
+    .nav{
+        padding-right: 2vh;
+        width: 100%;
+    }
+    .nav ul{
+        position: relative;
+        top: 200%;
+        visibility: hidden;
+        right: -15%;
+        display: flex;
+        width: 35vw;
+        flex-direction: column;
+        background-color:rgba(0, 0, 0, 0.236);
+    }
+    .nav ul a{
+        width: 30vw;
+        text-align: left;
+    }
+    .nav i{
+        display: block;
+        padding-right: 4vh;
+        padding-bottom: 2vh;
+        transform-origin: center;
+    }
+    .education-container{
+        flex-direction: column;
+        padding: 2vh;
+    }
+    .education-container .part1,.education-container .part2{
+        width: 100%;
+        padding: 1vh;
+    }
+    .education-container img{
+        height: 10vh;
+        width: 10vh;
     }
 }

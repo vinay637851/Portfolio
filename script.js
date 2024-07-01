@@ -15,3 +15,15 @@ function edcucation_move(){
     part1.children[0].style.top="0";
     part1.children[1].style.top="0";
 }
+let idx=0;
+function list_on(){
+    if(idx%2==0)
+        document.getElementsByClassName("fa-bars")[0].parentElement.children[0].style.visibility="visible"
+    else
+        document.getElementsByClassName("fa-bars")[0].parentElement.children[0].style.visibility="hidden"
+    idx++;
+}
+function list(ele){
+    console.log(ele.parentNode)
+    ele.parentElement.style.visibility="hidden"
+}
